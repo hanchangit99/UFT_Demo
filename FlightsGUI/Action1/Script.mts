@@ -30,3 +30,8 @@ If checkTotalPrice = strTotalPrice Then
 Else	
 	Reporter.ReportEvent micFail, "訂單金額檢核","錯誤。機票張數:" & strTicketNumber & "機票金額:" & strTicketPrice & "機票總額:" & checkTotalPrice
 End If
+'關閉MyFlight 程式
+WpfWindow("Micro Focus MyFlight Sample").Close
+
+'Branch測試
+wait 5
